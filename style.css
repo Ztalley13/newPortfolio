@@ -1,0 +1,389 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Cinzel', serif;
+  }
+  
+  section {
+    display: block;
+    padding-top: 120px;
+    min-height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: block;
+    height: 90px;
+    width: auto;
+    background-color: lightseagreen;
+    margin-top: 0px;
+    padding: 0px;
+    letter-spacing: 3px;
+  }
+  
+  /*****************************
+  HEADER/NAV BUTTON STYLE
+  ******************************/
+  #logo {
+    width: 100px;
+    height: auto;
+    margin: 4px;
+    padding: 20px;
+    border: 2px solid gray;
+  }
+  
+  /* These buttons have a display none for now. Will use later */
+  #btn_hire button {
+    margin: 10px;
+    display: none;
+  }
+  
+  .btn-group-lg > .btn,
+  .btn-lg {
+    border-radius: 50px;
+  }
+  /* end button display none style */
+  
+  nav {
+    text-align: right;
+  }
+  
+  /* Right navbar style */
+  .navRight {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    letter-spacing: 2px;
+  }
+  
+  .navRight li {
+    display: inline-block;
+    margin: 2em;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    text-decoration: none;
+    color: lightseagreen;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:active {
+    -webkit-text-decoration-color: white;
+    text-decoration-color: white;
+    color: white !important;
+    border-bottom: 3px solid lightseagreen;
+    padding-bottom: 6px;
+    cursor: pointer;
+  }
+  
+  .bg-dark {
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  div .row {
+    text-align: center;
+  }
+  
+  /* HAMBURGER BUTTON STYLE */
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: lightseagreen;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  
+  .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+  
+  /*======================================
+          HOME SECTION STYLING
+  =======================================*/
+  #home {
+    background: none;
+    height: 100vh;
+  }
+  
+  #home-bg-img {
+    position: fixed;
+    background-size: cover;
+    background-size: auto;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+  
+  #home-bg-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  
+  #home-content-inner {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #home-heading {
+    display: none;
+  }
+  
+  #home-heading h1 {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+  
+  #home-heading-1 {
+    padding-bottom: 25px;
+  }
+  
+  #home-heading-2 {
+    color: lightseagreen;
+    text-shadow: 1px 1px gray;
+  }
+  
+  hr {
+    text-align: center;
+    width: 50%;
+    color: black;
+  }
+  
+  /*======================================
+          SKILLS SECTION STYLING
+  =======================================*/
+  .section_title {
+    color: black;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  #skills {
+    padding-bottom: 100px;
+  }
+  
+  #skills li {
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: left;
+  }
+  
+  /*======================================
+          PROJECTS SECTION STYLING
+  =======================================*/
+  #projects {
+    background-color: lightseagreen;
+    padding-bottom: 120px;
+  }
+  
+  #projects hr {
+    display: none;
+  }
+  
+  .subtitle {
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .section_info {
+    font-size: 25px;
+  }
+  
+  .card {
+    outline-style: groove;
+    outline-color: rgb(187, 196, 200);
+    outline-width: 5px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .card-title {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid gray;
+    padding-bottom: 35px;
+  }
+  
+  .card-text {
+    color: black;
+  }
+  
+  .card a:hover {
+    text-decoration: none;
+    -webkit-animation: recent_work_scale 0.3s ease-out forwards;
+    animation: recent_work_scale 0.3s ease-out forwards;
+    cursor: pointer;
+  }
+  
+  /* recent work scale on hover animation */
+  @-webkit-keyframes recent_work_scale {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    25% {
+      -webkit-transform: scale(1.05) rotate(-5deg);
+      transform: scale(1.05) rotate(-5deg);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.05) rotate(0deg);
+      transform: scale(1.05) rotate(0deg);
+    }
+  
+    75% {
+      -webkit-transform: scale(1.075) rotate(5deg);
+      transform: scale(1.075) rotate(5deg);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1) rotate(0deg);
+      transform: scale(1.1) rotate(0deg);
+    }
+  }
+  @keyframes recent_work_scale {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    25% {
+      -webkit-transform: scale(1.05) rotate(-5deg);
+      transform: scale(1.05) rotate(-5deg);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.05) rotate(0deg);
+      transform: scale(1.05) rotate(0deg);
+    }
+  
+    75% {
+      -webkit-transform: scale(1.075) rotate(5deg);
+      transform: scale(1.075) rotate(5deg);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1) rotate(0deg);
+      transform: scale(1.1) rotate(0deg);
+    }
+  }
+  /*======================================
+          CONTACT SECTION STYLING
+  =======================================*/
+  #contact {
+    height: 100%;
+  }
+  
+  #contact p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*======================================
+          FOOTER SECTION STYLING
+  =======================================*/
+  
+  footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 90px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 10px 0 10px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  #footer-bottom p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*****************************
+        MEDIA QUERIES
+  ******************************/
+  
+  @media screen and (max-width: 780px) {
+    #home-heading h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    #contact p {
+      width: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    #contact p {
+      font-size: 18px;
+      width: 85%;
+    }
+  }
+  
